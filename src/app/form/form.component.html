@@ -1,0 +1,12 @@
+<div class="form-container">
+  <p>Deja tus datos!</p>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)" class="d-flex flex-column">
+    <label for="name">Nombre</label>
+    <input id="name" type="text" formControlName="name" class="form-control">
+    <label for="email">Email</label>
+    <input id="email" type="email" formControlName="email" class="form-control">
+    <label for="phoneNumber">Número de telefono</label>
+    <input id="phoneNumber" type='text' prefix="+54" mask="(000) 0000 00 00" formControlName="phone" class="form-control">
+    <button type="submit" [disabled]="contactForm.invalid">Enviar!</button>
+  </form>
+</div>

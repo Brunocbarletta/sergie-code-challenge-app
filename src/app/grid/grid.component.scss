@@ -1,0 +1,12 @@
+:host{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+igx-buttongroup{
+  display: block;
+  width: 500px;
+}
